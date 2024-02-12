@@ -27,11 +27,14 @@ h1 {
 	color: #54d3f0;
 }
 #container {
-	margin-top: 2%;
-	margin-left: 5%;
-	margin-right: 5%;
+	margin: 2% 5% 100px 5%;
 	padding: 10px;
 }
+.movies {
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 30px;
+}	
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -52,12 +55,14 @@ footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+	position: fixed;
+	left: 0;
 	
 }	
 footer p {
 	color: white;
 	font-weight: 400;
-	
+	float: right;
 	padding-right: 10px;
 	font-style: 10px;
 	
@@ -66,7 +71,18 @@ footer p {
 footer a {
 	text-decoration: none;
 	color: white;
+	text-align: right;
 }
 #cr {
  float: left;	
 }	
+
+th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+}
+td {
+	border: 1px solid #ddd;
+	padding: 8px;
+} 	
