@@ -1,0 +1,44 @@
+<!-- Torren Davis : Assignment 9.3 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Development with HTML and CSS</title>
+	<script>
+		var firstVar = "Northwest";
+		var secondVar = "games";
+		var thirdVar = "projects";
+		var forthVar = "Bellevue";
+	</script>
+</head>
+
+<body>
+	<div id=”container”>
+	
+	
+    <h1>Assignment 9.3: JavaScript - Part 1</h1>
+	<h2>A Bit About Me! </h2>
+	<p class="intro"> My name is Torren Marquise Davis, and I was born and raised on the south side of Chicago, Illinois. When I
+	became a teenager, I moved out of the city, and moved to the <span id = "Northwest">_________</span> Indiana region. To this day, I still live
+	there, just outside of the city I was born in.</p>
+	<p> There are quite a few hobbies I find myself enjoying, time and time again. Firstly, I enjoy drawing and writing, 
+	as well as playing many different video <span id = "games">_________</span>. I use these hobbies to express myself, and enjoy time with my friends.</p>
+	<p> Currently, I am aiming to learn programming to the best of my abilities, and for multiple reasons. Firstly, I
+	would like to use the skill to aid myself in getting a higher quality job in the field of software and/or technology.
+	However, my ulterior motive is to further my skills in game development, for my own personal <span id = "projects">_________</span>.</p>
+	<p> School after high school has been a tiresome journey for me. I've been in around 4-5 different colleges/universities
+	at this point, and still haven't gotten my bachelor's degree. Hopefully <span id = "Bellevue">_________</span> will be where the journey ends.</p>
+	<hr>
+	<p>
+           <button type="button"
+             onclick="document.getElementById('Northwest').innerHTML = firstVar">Northwest</button> <br /> 
+			 <button type="button"
+             onclick="document.getElementById('games').innerHTML = secondVar">games</button> <br />   
+			  <button type="button"
+             onclick="document.getElementById('projects').innerHTML = thirdVar">projects</button> <br />   
+			  <button type="button"
+             onclick="document.getElementById('Bellevue').innerHTML = forthVar">Bellevue</button> <br />   
+       </p>
+	</div>
+</body>
+
+</html>
