@@ -1,0 +1,68 @@
+<!-- Torren Davis : Assignment 3.3 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+	<meta name="keywords" content="HTML, CSS, Torren, Davis">
+	<meta name="author" content="Torren Davis">
+	<meta name="description" content="Web Dev Module 3.3 Assignment">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="Davis_Mod3_3.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+	
+	
+	<div id=”container”>
+		<h1>Assignment 12.2: JavaScript - Part 4</h1>
+		<div class="left">
+			<h3>Top 10 Favorite Books</h3>
+				<button onclick="displayTopToBottom()">Top to Bottom</button>
+				<button onclick="displayBottomToTop()">Bottom to Top</button>
+				<p id="bookList"></p>
+
+				<script>
+					const bookTitles = [
+						"1. Naruto Volume 72, ",
+						"2. Catching Fire, ",
+						"3. The Hunger Games, ",
+						"4. Harry Potter and the Chamber of Secrets, ",
+						"5. The Mist, ",
+						"6. It, ",
+						"7. Matilda, ",
+						"8. The Lion, the Witch, and the Wardrobe, ",
+						"9. Bridge to Terabithia, ",
+						"10. Fear Street series, "
+					];
+
+					function displayTopToBottom() {
+						const bookListElement = document.getElementById("bookList");
+						bookListElement.textContent = bookTitles.join("\n");
+					}
+
+					function displayBottomToTop() {
+						const bookListElement = document.getElementById("bookList");
+						bookListElement.textContent = bookTitles.reverse().join("\n");
+					}
+				</script>
+		</div> <div class="right"> 
+		
+			<h3>5 Things I’ve Learned Since the Course Started</h3>
+				<ul>
+					<li>How to create this webpage </li>
+					<li>The basics of HTML </li>
+					<li>The basics of CSS </li>
+					<li>How to navigate Github better than before </li>
+					<li>How to edit the style of HTML pages with CSS </li>
+				</ul>
+		</div>
+		
+		<div class="bottom">
+			
+		</div>
+	</div>
+
+</body>
+
+</html>
